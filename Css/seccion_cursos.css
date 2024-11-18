@@ -1,0 +1,452 @@
+
+body {
+  height: 200dvh;
+  background-color: #9a9a9a;
+}
+/*--------------------------contenedor-curso1001-------------------------------------*/
+/* Estilos para el contenedor principal */
+.contenedor-curso2001 {
+  width: 99%;
+  height: 800px; /* Puedes ajustar esta altura según el contenido o preferencia */
+  
+  /* Fondo con gradiente y una imagen local */
+  background: linear-gradient(to right, hsla(233, 74%, 30%, 0), hsla(147, 74%, 15%, 0)), url("https://img.freepik.com/foto-gratis/herramientas-salon-marco-vintage-mesa-madera-trabajos-concepto-carrera_53876-143259.jpg?semt=ais_hybrid");
+  background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
+  background-attachment: fixed; /* Fija el fondo mientras se hace scroll */
+  position: relative;
+  margin-bottom: 200px;
+}
+
+/* Estilos para el contenedor de los textos */
+.textos-curso2002 {
+  display: flex;
+  height: 430px; /* Ajusta según el contenido */
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Estilo para el título principal */
+.textos-curso2002 h1 {
+  font-size: 8vw; /* Tamaño dinámico que se ajusta al ancho de la ventana */
+  margin: 0;
+}
+
+/* Estilo para el subtítulo */
+.textos-curso2002 h2 {
+  font-size: 5vw; /* Tamaño dinámico que se ajusta al ancho de la ventana */
+  margin: 0;
+}
+
+/* Estilo para el contenedor del título central */
+.titulo-centro2003 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 6vw; /* Tamaño dinámico que se ajusta al ancho de la ventana */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Estilos para la ola (SVG) al final */
+.wave-curso2004 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilos adicionales para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .contenedor-curso2001 {
+    height: auto; /* Ajuste para pantallas pequeñas */
+  }
+
+  .textos-curso2002 {
+    width: auto;
+    height: auto; /* Ajuste para pantallas pequeñas */
+  }
+
+  /* Reduce el tamaño de los textos en dispositivos pequeños */
+  .textos-curso2002 h1 {
+    font-size: 10vw;
+  }
+
+  .textos-curso2002 h2 {
+    font-size: 6vw;
+  }
+
+  .titulo-centro2003 {
+    font-size: 8vw;
+  }
+}
+
+/*------------------------------------------------------------------cursos--------------------------------------*/
+.contenedor-imagenes1005 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.fila1006 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.tarjeta-curso03 {
+  width: 30%;
+  max-width: 450px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imagen-curso04 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imagen-curso04 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.titulo-curso05 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 5;
+}
+
+.informacion-curso06 {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 98%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.534);
+  color: white;
+  text-align: center;
+  padding: 80px 10px;
+  font-size: 15px;
+  opacity: 0;
+  align-items: center;
+  transition: right 0.5s ease, opacity 0.5s ease;
+  z-index: 10;
+}
+
+.imagen-curso04:hover img {
+  transform: scale(1.05);
+}
+
+.imagen-curso04:hover .informacion-curso06 {
+  right: 0;
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contenedor-imagenes1005 {
+    margin-top: 50px;
+  }
+
+  .titulo-curso05 {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .informacion-curso06 {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .fila1006 {
+    flex-direction: column;
+  }
+
+  .tarjeta-curso03 {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/*---------------------------------------------------------contenedor-doble1009-------------------------------------------------------------*/
+
+.contenedor-doble1009 {
+  display: flex;
+  flex-direction: column; /* Inicialmente vertical */
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  text-align: center; /* Centrar texto en el contenedor */
+  background-color: #ffffff00;
+}
+
+.imagen1010, .texto1011 {
+  flex: 1; /* Ocupa el mismo espacio */
+  display: flex; /* Permite centrar contenido interno */
+  justify-content: center; /* Centrar contenido horizontalmente */
+  align-items: center; /* Centrar contenido verticalmente */
+}
+
+.imagen1010 img {
+  width: 100%; /* Ajustar el ancho al contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+  max-width: 800px; /* Máximo ancho de la imagen */
+  object-fit: cover;
+}
+
+.texto1011 {
+  margin-top: 20px; /* Espacio entre imagen y texto */
+  display: flex; /* Para que el texto sea un contenedor flex */
+  flex-direction: column; /* Texto en disposición vertical */
+  align-items: center; /* Centrar el texto dentro del contenedor */
+}
+
+.texto1011 h2 {
+  font-size: 2.5rem; /* Ajustar tamaño de fuente para responsividad */
+}
+
+.texto1011 p {
+  font-size: 1.25rem; /* Ajustar tamaño de fuente para responsividad */
+  color: hsla(0, 0%, 15%, 0.87);
+}
+
+/* Media Queries para mejorar la responsividad en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .contenedor-doble1009 {
+    flex-direction: column; /* Vertical en pantallas pequeñas */
+  }
+
+  .texto1011 {
+    margin-top: 20px; /* Espacio entre imagen y texto */
+  }
+
+  .texto1011 h2 {
+    font-size: 2rem; /* Reducir tamaño de título */
+  }
+
+  .texto1011 p {
+    font-size: 1rem; /* Reducir tamaño de texto */
+  }
+}
+
+/* Media Query para pantallas más grandes */
+@media (min-width: 769px) {
+  .contenedor-doble1009 {
+    flex-direction: row; /* Horizontal en pantallas grandes */
+    text-align: left; /* Alinear texto a la izquierda */
+  }
+
+  .imagen1010, .texto1011 {
+    flex: 1; /* Ambas ocupan el mismo espacio */
+    margin: 0 10px; /* Espacio entre imagen y texto */
+  }
+
+  .texto1011 {
+    margin-top: 0; /* Eliminar espacio superior en modo horizontal */
+}
+}
+
+/*--------------------------------------------------- contenedor-negro1012-------------------------------------------*/
+.contenedor-negro1234 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  background-color: #1e1e1e;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+.imagen-container5678 {
+  flex: 1;
+  text-align: center;
+}
+
+.carousel-container3456 {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Limitar el tamaño del carrusel */
+  margin: 0 auto; /* Centrar el carrusel */
+  overflow: hidden;
+}
+
+.carousel7890 {
+  position: relative;
+}
+
+.carousel-images1122 {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-images1122 .imagen2134,
+.carousel-images1122 .imagen3245 {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.carousel-button-container6678 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Espacio entre la imagen y los botones */
+}
+
+.carousel-button2345 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.carousel-button2345:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.titulo9012 {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.formulario-container9876 {
+  max-width: 600px;
+  background-color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.formulario-container9876 h1 {
+  font-size: 24px;
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+
+.formulario-container9876 label {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.formulario-container9876 input,
+.formulario-container9876 select,
+.formulario-container9876 textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.formulario-container9876 button {
+  padding: 12px;
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.76);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-container9876 button:hover {
+  background-color: #380e0e;
+}
+
+@media (max-width: 768px) {
+  .contenedor-negro1234 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulario-container9876 {
+    width: 90%;
+  }
+
+  .imagen-container5678 img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo9012 {
+    font-size: 24px;
+  }
+
+  .formulario-container9876 h1 {
+    font-size: 20px;
+  }
+
+  .formulario-container9876 label {
+    font-size: 14px;
+  }
+
+  .formulario-container9876 input,
+  .formulario-container9876 select,
+  .formulario-container9876 textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .formulario-container9876 button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+/*--------------------------------------------------- divisiones y líneas -------------------------------------------------*/
+.linea-divisoria1004 {
+  height: 2px;
+  background-color: #000;
+  margin: 50px 0;
+}
+
+/* ----------------------------------- Responsivo ---------------------------------------*/
+
+@media (max-width: 768px) {
+  .contenedor-doble1009 {
+    flex-direction: column;
+  }
+  
+  .texto1011 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .contenedor-negro1012 {
+    flex-direction: column;
+  }
+}
